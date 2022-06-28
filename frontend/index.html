@@ -6,47 +6,66 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-
-  Our Pricing
-  Annually
-  Monthly
-
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
-
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <header>
+    <h1>Our Pricing</h1>
+    <div class="btn-toggle">
+      Annually
+      Monthly
+    </div>
+    <div class="group-card">
+      <div class="group-card__item">
+        <h2 class="group-card__plan">Basic</h2>
+        <div class="group-card__price">
+          <div class="group-card__price--annually">&dollar;19.99</div>
+          <div class="group-card__price--monthly">&dollar;199.99</div>
+        </div>
+        <div class="group-card__benefits">
+          <div>500 GB Storage</div>
+          <div>2 Users Allowed</div>
+          <div>Send up to 3 GB</div>  
+        </div>
+        <a href="#" class="btn btn-purple">Learn More</a>
+      </div>
+    </div>
+    <div class="group-card">
+      <div class="group-card__item">
+        <h2 class="group-card__plan">Professional</h2>
+        <div class="group-card__price">
+          <div class="group-card__price--annually">&dollar;24.99</div>
+          <div class="group-card__price--monthly">&dollar;249.99</div>
+        </div>
+        <div class="group-card__benefits">
+          <div>1 TB Storage</div>
+          <div>5 Users Allowed</div>
+          <div>Send up to 10 GB</div>  
+        </div>
+        <a href="#" class="btn btn-purple">Learn More</a>
+      </div>
+    </div>
+    <div class="group-card">
+      <div class="group-card__item">
+        <h2 class="group-card__plan">Master</h2>
+        <div class="group-card__price">
+          <div class="group-card__price--annually">&dollar;39.99</div>
+          <div class="group-card__price--monthly">&dollar;399.99</div>
+        </div>
+        <div class="group-card__benefits">
+          <div>2 TB Storage</div>
+          <div>10 Users Allowed</div>
+          <div>Send up to 20 GB</div>  
+        </div>
+        <a href="#" class="btn btn-purple">Learn More</a>
+      </div>
+    </div>
+  </header>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/cloviswrodrigues">Clóvis Rodrigues</a>.
+  </footer>
 </body>
 </html>
