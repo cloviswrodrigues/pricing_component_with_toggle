@@ -26,3 +26,8 @@ body {
             url(../assets/bg-bottom.svg) no-repeat left bottom,
             $color-very-light-grayish-blue;
 }
+
+a {
+    all: unset;
+    cursor: pointer;
+}

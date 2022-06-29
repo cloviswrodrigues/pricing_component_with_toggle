@@ -1,4 +1,82 @@
 h1 {
     font-size: 2.4rem;
-    color: $color-dark-grayish-blue;
+    color: $color-grayish-blue;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.group-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    margin: 4rem auto;
+    font-size: 1.4rem;
+    color: $color-light-grayish-blue;
+}
+
+.group-card {
+    display: grid;
+    grid: 1fr / repeat(3, 1fr);    
+    text-align: center;
+
+    &__item {
+        background-color: white;
+        padding: 4rem;    
+        border: 1px solid green;           
+    }
+
+    &__plan {
+        font-size: 1.6rem;
+    } 
+
+    &__price {
+        margin-top: 1rem;
+        font-size: 6rem;
+        text-align: center;
+
+        &-value {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__benefits {
+        font-size: 1.4rem;
+        margin: 2rem 0;
+
+        & > * {
+            margin: 3rem 0;
+        }
+    }
+}
+
+.btn {
+    padding: 1rem;
+    display: block;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.btn-white {
+    background-color: white;
+    color: $color-purple;
+}
+
+.btn-gradient-purple {
+    background: $color-light-purple;
+    background: linear-gradient(90deg, $color-light-purple 40%, $color-purple 90%);
+    color: white;
+    letter-spacing: 2px;
+}
+
+.dollar-symbol {
+    font-size: 50%;
+    margin-right: 5px;
+}
+
+.disabled {
+    display: none;
 }
