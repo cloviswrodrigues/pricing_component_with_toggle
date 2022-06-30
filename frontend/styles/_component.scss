@@ -10,29 +10,45 @@ h1 {
     justify-content: space-between;
     align-items: center;
     width: 20rem;
-    margin: 4rem auto;
+    margin: 4rem auto 6rem;
     font-size: 1.4rem;
     color: $color-light-grayish-blue;
 }
 
 .group-card {
     display: grid;
-    grid: 1fr / repeat(3, 1fr);    
+    grid: 1fr / repeat(3, 400px);    
+    justify-content: center;
     text-align: center;
 
     &__item {
         background-color: white;
-        padding: 4rem;    
-        border: 1px solid green;           
+        color: $color-dark-grayish-blue;
+        padding: 4rem;
+        margin: 2rem 0;
+        border-radius: 10px;
+    }
+
+    &__item--purple {        
+        background: $color-gradiente-purple;
+        color: $color-very-light-grayish-blue;
+        padding: 6rem 4rem;       
+        border-radius: 10px;        
     }
 
     &__plan {
-        font-size: 1.6rem;
+        font-size: 2rem;
+        color: $color-grayish-blue;
+    } 
+
+    &__plan--light {
+        font-size: 2rem;
+        color: $color-very-light-grayish-blue;
     } 
 
     &__price {
-        margin-top: 1rem;
-        font-size: 6rem;
+        margin-top: 2rem;
+        font-size: 8em;
         text-align: center;
 
         &-value {
@@ -43,32 +59,53 @@ h1 {
     }
 
     &__benefits {
-        font-size: 1.4rem;
-        margin: 2rem 0;
+        font-size: 1.6rem;
+        color: $color-grayish-blue;
+        margin: 4rem 0;
 
-        & > * {
-            margin: 3rem 0;
-        }
+        & > div {
+            border-top: 1px solid $color-light-grayish-blue;
+            padding: 2rem 0;
+
+            &:last-child {
+                border-bottom: 1px solid $color-light-grayish-blue;
+            }
+        }        
+    }
+
+    &__benefits--light {
+        font-size: 1.6rem;
+        color: $color-very-light-grayish-blue;
+        margin: 4rem 0;
+
+        & > div {
+            border-top: 1px solid $color-very-light-grayish-blue;
+            padding: 2rem 0;
+
+            &:last-child {
+                border-bottom: 1px solid $color-very-light-grayish-blue;
+            }
+        }        
     }
 }
 
 .btn {
-    padding: 1rem;
+    padding: 1.5rem;
     display: block;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     border-radius: 5px;
 }
 
-.btn-white {
-    background-color: white;
+.btn-light {
+    background-color: $color-very-light-grayish-blue;
     color: $color-purple;
 }
 
 .btn-gradient-purple {
     background: $color-light-purple;
     background: linear-gradient(90deg, $color-light-purple 40%, $color-purple 90%);
-    color: white;
+    color: $color-very-light-grayish-blue;
     letter-spacing: 2px;
 }
 

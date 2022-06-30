@@ -40,7 +40,7 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   width: 20rem;
-  margin: 4rem auto;
+  margin: 4rem auto 6rem;
   font-size: 1.4rem;
   color: #b3b5c6;
 }
@@ -48,23 +48,42 @@ h1 {
 .group-card {
   display: -ms-grid;
   display: grid;
-  grid: 1fr/repeat(3, 1fr);
+  grid: 1fr/repeat(3, 400px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
 .group-card__item {
   background-color: white;
+  color: #494c5f;
   padding: 4rem;
-  border: 1px solid green;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+
+.group-card__item--purple {
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #a3a8f0), color-stop(90%, #696fdd));
+  background: linear-gradient(90deg, #a3a8f0 40%, #696fdd 90%);
+  color: #f6f6fe;
+  padding: 6rem 4rem;
+  border-radius: 10px;
 }
 
 .group-card__plan {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  color: #6d708d;
+}
+
+.group-card__plan--light {
+  font-size: 2rem;
+  color: #f6f6fe;
 }
 
 .group-card__price {
-  margin-top: 1rem;
-  font-size: 6rem;
+  margin-top: 2rem;
+  font-size: 8em;
   text-align: center;
 }
 
@@ -81,24 +100,45 @@ h1 {
 }
 
 .group-card__benefits {
-  font-size: 1.4rem;
-  margin: 2rem 0;
+  font-size: 1.6rem;
+  color: #6d708d;
+  margin: 4rem 0;
 }
 
-.group-card__benefits > * {
-  margin: 3rem 0;
+.group-card__benefits > div {
+  border-top: 1px solid #b3b5c6;
+  padding: 2rem 0;
+}
+
+.group-card__benefits > div:last-child {
+  border-bottom: 1px solid #b3b5c6;
+}
+
+.group-card__benefits--light {
+  font-size: 1.6rem;
+  color: #f6f6fe;
+  margin: 4rem 0;
+}
+
+.group-card__benefits--light > div {
+  border-top: 1px solid #f6f6fe;
+  padding: 2rem 0;
+}
+
+.group-card__benefits--light > div:last-child {
+  border-bottom: 1px solid #f6f6fe;
 }
 
 .btn {
-  padding: 1rem;
+  padding: 1.5rem;
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   border-radius: 5px;
 }
 
-.btn-white {
-  background-color: white;
+.btn-light {
+  background-color: #f6f6fe;
   color: #696fdd;
 }
 
@@ -106,7 +146,7 @@ h1 {
   background: #a3a8f0;
   background: -webkit-gradient(linear, left top, right top, color-stop(40%, #a3a8f0), color-stop(90%, #696fdd));
   background: linear-gradient(90deg, #a3a8f0 40%, #696fdd 90%);
-  color: white;
+  color: #f6f6fe;
   letter-spacing: 2px;
 }
 
