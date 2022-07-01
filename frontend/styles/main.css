@@ -48,7 +48,7 @@ h1 {
 .group-card {
   display: -ms-grid;
   display: grid;
-  grid: 1fr/repeat(3, 400px);
+  grid: 1fr/repeat(3, minmax(340px, 400px));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -60,12 +60,20 @@ h1 {
   color: #494c5f;
   padding: 4rem;
   margin: 2rem 0;
-  border-radius: 10px;
+}
+
+.group-card__item:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.group-card__item:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .group-card__item--purple {
-  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #a3a8f0), color-stop(90%, #696fdd));
-  background: linear-gradient(90deg, #a3a8f0 40%, #696fdd 90%);
+  background: linear-gradient(110deg, #a3a8f0 30%, #696fdd 100%);
   color: #f6f6fe;
   padding: 6rem 4rem;
   border-radius: 10px;
@@ -144,8 +152,7 @@ h1 {
 
 .btn-gradient-purple {
   background: #a3a8f0;
-  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #a3a8f0), color-stop(90%, #696fdd));
-  background: linear-gradient(90deg, #a3a8f0 40%, #696fdd 90%);
+  background: linear-gradient(110deg, #a3a8f0 30%, #696fdd 100%);
   color: #f6f6fe;
   letter-spacing: 2px;
 }
