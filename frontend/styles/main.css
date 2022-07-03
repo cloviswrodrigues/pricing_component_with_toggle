@@ -45,6 +45,31 @@ h1 {
   color: #b3b5c6;
 }
 
+.btn-toggle {
+  background: linear-gradient(110deg, #a3a8f0 30%, #696fdd 100%);
+  width: 50px;
+  height: 27px;
+  padding: 3px;
+  border-radius: 20px;
+  border: none;
+}
+
+.btn-toggle::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: #f6f6fe;
+  border-radius: 50%;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.btn-toggle--move::after {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
 .group-card {
   display: -ms-grid;
   display: grid;
