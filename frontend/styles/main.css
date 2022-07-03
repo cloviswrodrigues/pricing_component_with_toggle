@@ -165,4 +165,18 @@ h1 {
 .disabled {
   display: none;
 }
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.attribution a {
+  color: #696fdd;
+}
+
+.attribution a:hover {
+  color: #2a31b7;
+}
 /*# sourceMappingURL=main.css.map */

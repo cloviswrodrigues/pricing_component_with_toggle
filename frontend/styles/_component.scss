@@ -127,3 +127,18 @@ h1 {
 .disabled {
     display: none;
 }
+
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    a {
+        color: $color-purple;
+
+        &:hover {
+            color: darken($color-purple, 20%);
+        }
+    }
+}
