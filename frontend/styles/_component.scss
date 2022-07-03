@@ -104,12 +104,20 @@ h1 {
     display: block;
     font-size: 1.4rem;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 5px; 
+    box-sizing: border-box;
+    height: 48px;
 }
 
 .btn-light {
     background-color: $color-very-light-grayish-blue;
     color: $color-purple;
+
+    &:hover {
+        background: transparent;
+        color: $color-very-light-grayish-blue;
+        border: 1px solid $color-very-light-grayish-blue;
+    }
 }
 
 .btn-gradient-purple {
@@ -117,6 +125,12 @@ h1 {
     background: $color-gradiente-purple;
     color: $color-very-light-grayish-blue;
     letter-spacing: 2px;
+
+    &:hover {
+        background: transparent;
+        color: $color-purple;
+        border: 1px solid $color-purple;
+    }
 }
 
 .dollar-symbol {
