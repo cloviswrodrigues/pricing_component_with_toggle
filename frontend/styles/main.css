@@ -73,18 +73,33 @@ h1 {
 .group-card {
   display: -ms-grid;
   display: grid;
-  grid: 1fr/repeat(3, minmax(340px, 400px));
+  grid: minmax(400px, 540px)/repeat(3, minmax(320px, 400px));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+  padding: 1rem;
 }
 
 .group-card__item {
   background-color: white;
   color: #494c5f;
   padding: 4rem;
-  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  max-height: 500px;
 }
 
 .group-card__item:first-child {
@@ -98,6 +113,18 @@ h1 {
 }
 
 .group-card__item--purple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  max-height: 540px;
   background: linear-gradient(110deg, #a3a8f0 30%, #696fdd 100%);
   color: #f6f6fe;
   padding: 6rem 4rem;
@@ -115,7 +142,6 @@ h1 {
 }
 
 .group-card__price {
-  margin-top: 2rem;
   font-size: 8em;
   text-align: center;
 }
@@ -135,12 +161,11 @@ h1 {
 .group-card__benefits {
   font-size: 1.6rem;
   color: #6d708d;
-  margin: 4rem 0;
 }
 
 .group-card__benefits > div {
   border-top: 1px solid #b3b5c6;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .group-card__benefits > div:last-child {
@@ -150,12 +175,11 @@ h1 {
 .group-card__benefits--light {
   font-size: 1.6rem;
   color: #f6f6fe;
-  margin: 4rem 0;
 }
 
 .group-card__benefits--light > div {
   border-top: 1px solid #f6f6fe;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .group-card__benefits--light > div:last-child {
