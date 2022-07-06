@@ -48,10 +48,11 @@ h1 {
 .btn-toggle {
   background: linear-gradient(110deg, #a3a8f0 30%, #696fdd 100%);
   width: 50px;
-  height: 27px;
-  padding: 3px;
+  height: 29px;
+  padding: 4px;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
 }
 
 .btn-toggle::after {
@@ -61,8 +62,13 @@ h1 {
   height: 100%;
   background-color: #f6f6fe;
   border-radius: 50%;
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.btn-toggle:hover {
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
 }
 
 .btn-toggle--move::after {
