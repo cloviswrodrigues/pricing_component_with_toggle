@@ -134,6 +134,22 @@ h1 {
             }
         }        
     }
+
+    @media screen and (max-width: $break-mobile) {
+        grid: repeat(3,minmax(400px, 500px)) / minmax(320px, 400px);
+        padding-bottom: 8rem;
+        gap: 3rem;
+
+        &__item {
+            padding: 3rem;
+            border-radius: 10px;
+        }
+
+        &__item--purple {        
+            padding: 3rem;  
+            border-radius: 10px;    
+        }
+    }
 }
 
 .btn {
