@@ -193,12 +193,12 @@ h1 {
 }
 
 .group-card__benefits--light > div {
-  border-top: 1px solid #f6f6fe;
+  border-top: 1px solid rgba(246, 246, 254, 0.3);
   padding: 1.5rem 0;
 }
 
 .group-card__benefits--light > div:last-child {
-  border-bottom: 1px solid #f6f6fe;
+  border-bottom: 1px solid rgba(246, 246, 254, 0.3);
 }
 
 @media screen and (max-width: 1000px) {
